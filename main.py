@@ -5,8 +5,8 @@ from gpiozero import LED
 token = "SLACK TOKEN HERE" # found at https://api.slack.com/web#authentication
 
 red = LED(15)
-yellow = LED(18)
-green = LED(14)
+yellow = LED(14)
+green = LED(18)
 
 red.off()
 yellow.off()
