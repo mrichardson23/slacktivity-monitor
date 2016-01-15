@@ -22,7 +22,6 @@ if sc.rtm_connect():
 		events = sc.rtm_read()
 		for event in events:
 			if event['type'] == 'message':
-				print event['text']
 				message_count = message_count + 1
 		message_counts.insert(0, message_count)
 		if len(message_counts) > 600:
